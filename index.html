@@ -4,31 +4,227 @@
     <meta charset="UTF-8">
     <title>Klient niezdecydowany</title>
     
+      <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Numeric JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    
 <!--    font     -->
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--    style css     -->
+   
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
 </head>
 <body>
     <nav id="main-nav">
-        <ul>
-            <a href="#"><li>HOME</li></a>
-            <a href="#"><li>ABOUT</li></a>
-            <a href="#"><li>WORK</li></a>
-            <a href="#"><li>BLOG</li></a>
-            <a href="#"><li>CONTACT</li></a>
+        <ul class="main-nav-list">
+            <a href="#main-header" class="main-nav-list-item"><li>HOME</li></a>
+            <a href="#team" class="main-nav-list-item"><li>ABOUT</li></a>
+            <a href="#skills" class="main-nav-list-item"><li>WORK</li></a>
+            <a href="#about-us" class="main-nav-list-item"><li>BLOG</li></a>
+            <a href="#touch" class="main-nav-list-item"><li>CONTACT</li></a>
         </ul>
     </nav>   
     
 <!--    header      -->
     <header id="main-header">
         <div class="main-header-text">
-            <h1>Hi there! We are the new kids on the block and we build awesome websites and mobie apps</h1>
-            <button class="btn">WORK WITH US</button>
+            <h1>Hi there! We are the new kids on the block<br/> and we build awesome websites and mobie apps</h1>
+            <a href="#team"><button class="btn">WORK WITH US!</button></a>
         </div>
     </header>
     
+<!--   team    -->
+    <section id="team">
+        <h2>meet our beautiful team</h2>
+        <div class="stripe"></div>
+        <p class="stripe-text">We are small team of designers ale developers, who help brands with big ideas</p>
+        <div class="team-employess">
+            <div class="team-photo-container">
+                <figure class="team-photos">
+                    <img src="img/team/man-1.jpg" alt="">
+                    <figcaption class="team-tex">
+                        <h3>Anne Hathaway</h3>
+                        <h4>CEO / Marketing Guru</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, itaque sunt, eaque hic voluptatibus. Lobe bem tu di</p>
+                    </figcaption>
+                </figure>
+                <div class="media-icon">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
+           </div>
+            <div class="team-photo-container">
+                <figure class="team-photos">
+                    <img src="img/team/man-2.jpg" alt="">
+                    <figcaption class="team-tex">
+                        <h3>Kate Upon</h3>
+                        <h4>Creative Director</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ipsum perferendis animi molestiae corrupti.</p>
+                    </figcaption>
+                </figure>
+                <div class="media-icon">
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="team-photo-container">
+                <figure class="team-photos">
+                    <img src="img/team/man-1.jpg" alt="">
+                    <figcaption class="team-tex">
+                        <h3>Olivia Wilde</h3>
+                        <h4>Lead Designer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eum, quos sit asperiores sapiente quam veniam ad quis soluta.</p>
+                    </figcaption>
+                </figure>
+                <div class="media-icon">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="team-photo-container">
+                <figure class="team-photos">
+                    <img src="img/team/woman-1.jpg" alt="">
+                    <figcaption class="team-tex">
+                        <h3>Ashley Greene</h3>
+                        <h4>SEO / Developer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut animi, in qui maxime totam? Corporis deleniti laboriosam, illum maxime.</p>
+                    </figcaption>
+                </figure>
+                <div class="media-icon">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--         skills         -->
+    
+    <section id="skills">
+        <h2>We got skills!</h2>
+        <div class="stripe"></div>
+        <p class="stripe-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, facilis nulla cum laborum veniam consequuntur.</p>
+        <div class="skills-graphics">
+            <figure>
+                <img src="img/90.png" alt="">
+                <figcaption>
+                    WEB DESIGN
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/75.png" alt="">
+                <figcaption>
+                    HTML / CSS
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/70.png" alt="">
+                <figcaption>
+                    GRAPHIC DESIGN
+                </figcaption>
+            </figure>           
+            <figure>
+                <img src="img/85.png" alt="">
+                <figcaption>
+                    UI / UX
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    
+<!--    about us             -->
     
     
+    <section id="about-us">
+        <h2>what people say about us</h2>
+        <div class="stripe"></div>
+        <p class="stripe-text">Our clients love us!</p>
+        <div class="clients-container">
+            <div class="client-container-content">
+                <figure>
+                    <img src="img/team/man-1.jpg" alt="">
+
+                </figure>
+                <div class="client-container-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic id architecto ex quas. Qreo que di tampoco</p>
+                    <h3>ChANEL IMAN</h3>
+                    <h4>CEO of Pinterest</h4>
+                </div>
+            </div>
+            <div class="client-container-content">
+                <figure>
+                    <img src="img/team/man-1.jpg" alt="">
+
+                </figure>
+                <div class="client-container-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic id architecto ex quas. Qreo que di tampoco</p>
+                    <h3>ChANEL IMAN</h3>
+                    <h4>CEO of Pinterest</h4>
+                </div>
+            </div>
+            <div class="client-container-content">
+                <figure>
+                    <img src="img/team/man-1.jpg" alt="">
+
+                </figure>
+                <div class="client-container-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic id architecto ex quas. Qreo que di tampoco</p>
+                    <h3>ChANEL IMAN</h3>
+                    <h4>CEO of Pinterest</h4>
+                </div>
+            </div>
+            <div class="client-container-content">
+                <figure>
+                    <img src="img/team/man-1.jpg" alt="">
+
+                </figure>
+                <div class="client-container-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic id architecto ex quas. Qreo que di tampoco</p>
+                    <h3>ChANEL IMAN</h3>
+                    <h4>CEO of Pinterest</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--    touch         -->
+    
+    <section id="touch">
+        <h2>Get in Touch</h2>
+        <div class="stripe"></div>
+        <p class="stripe-text">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+        <form action="">
+            <input type="text" placeholder="Your Name" >
+            <input type="text" placeholder="Your Email">
+            <textarea name="" id="" placeholder="Your Message"></textarea>
+            <input type="submit" value="SEND MESSAGE">
+        </form>
+    </section>
+    
+<!--    footer         -->
+    
+    <footer id="footer">
+        <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Google+</a></li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="">Behance</a></li>
+            <li><a href="">Dribbble</a></li>
+            <li><a href="">GitHub</a></li>
+        </ul>
+    </footer>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

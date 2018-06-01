@@ -1,0 +1,10 @@
+@media all and (max-width: 1255px){
+    #about-us .clients-container .client-container-content{
+        display: block;
+    }
+    
+    #about-us .clients-container .client-container-content .client-container-text{
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Lato', sans-serif;
+    font-size: 10px;
 }
 
 *{
@@ -13,11 +14,17 @@ body{
     text-align: right;
     line-height: 30px;
     width: 100%;
+    background-color: transparent;
+    transition: all 0.4s;
+    margin-top: 65px;
+}
+
+#main-nav.main-nav-color{
+    background-color: rgba(135, 80, 156, 0.5);
 }
 
 #main-nav ul {
     text-align: right;
-    margin-top: 65px;
     margin-right: 220px;
 }
 
@@ -27,31 +34,359 @@ body{
     text-decoration: none;
     color: #fff;
     font-size: 22px;
+    border-radius: 5px;
+}
+
+#main-nav ul li:hover {
+    background-color: #643A79;
+}
+
+#main-nav ul li:active {
+    background-color: #643A79;
 }
 
 #main-header{
-    background-color: purple;
-    margin: 0;
+    background-color: #87509C;
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
-/*    align-items: center;*/
+    align-items: center;
+    text-align: center;
+    height: 80vh;
 }
 
 #main-header .main-header-text{
-    margin: 0;
-    height: 500px;
+    width: 61%;
+    font-size: 20px;
 }
-
-/*
 
 #main-header .main-header-text h1{
-    line-height: 500px;
-    margin: 0;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin: 95px 0 0 0;
+    color: #fff;
 }
-*/
 
 #main-header .main-header-text .btn{
-    display: inline-block;
-    text-align: center;
+    width: 391px;
+    height: 92px;
+    border-radius: 5px;
+    background-color: #EB7D4B;
+    border: none;
+    box-shadow: 0px 5px 0px 0px #D06E34;
+    color: #fff;
+    margin: 75px 0 0 15px;
+    font-size: 22px;
+    transition: all 0.4s;
+    cursor: pointer;
 }
+
+#main-header .main-header-text .btn:hover{
+    background-color: #ce5a25;
+    box-shadow: 0px 5px 0px 0px #b54f13;
+}
+
+#main-header .main-header-text .btn:focus{
+    border: none;
+}
+/*    -------------------   Team             */
+
+#team{
+    text-align: center;
+    background-color: #E7F1F8;
+}
+
+#team h2{
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 1px;        
+    padding: 115px 0 13px 0;
+    margin: 0;
+}
+
+#team .stripe{
+    border: 2px solid gray;
+    width: 115px;
+    display: inline-block;
+}
+
+#team .stripe-text{
+    font-size: 25px;
+}
+
+#team .team-employess{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 79%;
+    padding-bottom: 165px;
+}
+
+#team .team-employess .team-photo-container .team-photos img{
+    border-radius: 50%;
+    height: 263px;
+}
+
+#team .team-employess .team-photo-container figcaption{
+    width: 263px;
+}
+
+#team .team-employess .team-photo-container figcaption h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px 0 0 0;
+    margin-bottom: 0;
+}
+
+#team .team-employess .team-photo-container figcaption h4{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #47BFE9;
+}
+
+#team .team-employess .team-photo-container figcaption p{
+    font-size: 20px;
+    line-height: 33px;
+}
+
+#team .team-employess .team-photo-container .media-icon{
+    margin-top: 35px;
+}
+
+#team .team-employess .team-photo-container .media-icon .fa{
+    background-color: #BDD1DF;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 0px 6px;
+}
+
+#team .team-employess .team-photo-container .media-icon .fa-facebook,
+#team .team-employess .team-photo-container .media-icon .fa-twitter,
+#team .team-employess .team-photo-container .media-icon .fa-linkedin,
+#team .team-employess .team-photo-container .media-icon .fa-envelope{
+    color: #fff;
+    line-height: 45px;
+    font-size: 25px;
+}
+
+
+/*---------------------     skills          */
+
+#skills{
+    text-align: center;
+    padding-bottom: 142px;
+}
+
+#skills h2{
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 1px;        
+    padding: 140px 0 13px 0;
+    margin: 0;
+}
+
+#skills .stripe{
+    border: 2px solid gray;
+    width: 115px;
+    display: inline-block;
+}
+
+#skills .stripe-text{
+    font-size: 25px;
+    width: 43%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skills .skills-graphics{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 103px 0 0 0;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skills .skills-graphics figcaption{
+    font-size: 3em;    
+    padding-top: 30px;
+}
+    
+/*--------------------         about us             */
+
+#about-us{
+    text-align: center;
+/*    height: 1500px;*/
+    background-color: #D74680;
+    color: #fff;
+}
+
+#about-us h2{
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 1px;        
+    padding: 150px 0 10px 0;
+    margin: 0;
+}
+
+#about-us .stripe{
+    border: 2px solid gray;
+    width: 115px;
+    display: inline-block;
+}
+
+#about-us .stripe-text{
+    font-size: 25px;
+}
+
+#about-us .clients-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 82px;
+}
+
+#about-us .clients-container .client-container-content{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 140px;
+}
+
+#about-us .clients-container .client-container-content figure img{
+    border-radius: 50%;
+    width: 130px;
+}
+
+#about-us .clients-container .client-container-content .client-container-text{
+    text-align: left;
+    width: 80%;
+    padding-left: 30px;
+    
+}
+
+#about-us .clients-container .client-container-content .client-container-text p{
+    font-size:  25px;
+    font-style: italic;
+    line-height: 40px;
+}
+
+#about-us .clients-container .client-container-content .client-container-text h3{
+    font-size:  3em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+#about-us .clients-container .client-container-content .client-container-text h4{
+    font-size:  2.3em;
+    font-size: 100;
+    margin-top: 0;
+}
+
+/*------------------------touch          */
+
+#touch{
+    text-align: center;
+/*    height: 1500px;*/
+    background-color: #3C5499;
+    color: #fff;
+}
+
+#touch h2{
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 1px;        
+    padding: 150px 0 10px 0;
+    margin: 0;
+}
+
+#touch .stripe{
+    border: 2px solid gray;
+    width: 115px;
+    display: inline-block;
+}
+
+#touch .stripe-text{
+    font-size: 25px;
+}
+
+#touch form{
+/*    height: 500px;*/
+    width: 63%;
+    margin-top: 98px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+input[type='text'],
+textarea{
+    border-radius: 5px;
+    font-size: 26px;
+    padding: 20px;
+    background-color: #273A71;
+    border: none;
+}
+
+input[type='text'], 
+input:not([type='submit']){    
+    width: 47%;
+    margin: 10px 1%;
+}
+
+textarea{
+    width: 96%;
+    margin-top: 30px;
+    height: 260px;
+    font-family: 'Lato', sans-serif;
+}
+
+input[type='submit']{
+    width: 33%;
+    margin-top: 86px;
+    height: 92px;
+    font-size: 21px;
+    background-color: #30BAE7;
+    color: #fff;
+    border-color: #30BAE7;
+    border-radius: 5px;
+    margin-bottom: 160px;
+}
+
+input[type='submit']:hover{
+    background-color: #24a2cc;
+    border-color: #24a2cc;
+    cursor: pointer;
+}
+
+/*----------------footer         */
+
+#footer ul{
+    text-align: center;
+    font-size: 30px;
+    background-color: #344B8E;
+    margin: 0;
+}
+#footer ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 60px 35px;
+    text-decoration: none;
+}
+
+#footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
